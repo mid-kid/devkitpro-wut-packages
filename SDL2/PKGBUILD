@@ -18,7 +18,7 @@ build() {
   patch -p1 -i $srcdir/SDL2-${pkgver}.patch
   mkdir build
   cd build
-  "$DEVKITPRO"/portlibs/wiiu/bin/powerpc-eabi-cmake .. \
+  "$DEVKITPRO"/portlibs/wiiu/bin/powerpc-eabi-cmake -G"Unix Makefiles" .. \
   -DCMAKE_BUILD_TYPE="Release" \
   -DCMAKE_INSTALL_PREFIX="$DEVKITPRO"/portlibs/wiiu
   make
