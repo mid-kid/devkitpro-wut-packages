@@ -52,7 +52,7 @@ build() {
 package() {
   cd SDL2_mixer-$pkgver
 
-  source /opt/devkitpro/wiiuvars.sh
+  source "$DEVKITPRO"/wiiuvars.sh
 
   make DESTDIR="$pkgdir" install
 

@@ -20,7 +20,7 @@ build() {
 
   cd SDL2_gfx-$pkgver
 
-  source /opt/devkitpro/wiiuvars.sh
+  source "$DEVKITPRO"/wiiuvars.sh
   
   ./configure --prefix="${PORTLIBS_PREFIX}" \
     --enable-mmx=no \
@@ -34,7 +34,7 @@ build() {
 package() {
   cd SDL2_gfx-$pkgver
 
-  source /opt/devkitpro/wiiuvars.sh
+  source "$DEVKITPRO"/wiiuvars.sh
 
   make DESTDIR="$pkgdir" install
 
