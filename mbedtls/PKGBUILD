@@ -30,7 +30,7 @@ build() {
 
   ./scripts/config.pl unset MBEDTLS_SELF_TEST
 
-  "$DEVKITPRO"/portlibs/wiiu/bin/powerpc-eabi-cmake \
+  "$DEVKITPRO"/portlibs/wiiu/bin/powerpc-eabi-cmake -G"Unix Makefiles" \
     -DCMAKE_INSTALL_PREFIX="$DEVKITPRO"/portlibs/wiiu \
     -DCMAKE_BUILD_TYPE=Release \
     -DENABLE_TESTING=Off -DENABLE_PROGRAMS=Off \
