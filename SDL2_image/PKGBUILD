@@ -38,7 +38,7 @@ build() {
 package() {
   cd SDL2_image-$pkgver
 
-  source /opt/devkitpro/wiiuvars.sh
+  source "$DEVKITPRO"/wiiuvars.sh
 
   make DESTDIR="$pkgdir" install
 

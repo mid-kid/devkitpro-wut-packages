@@ -12,6 +12,6 @@ sha256sums=('05c4d7486ad61bf2d99dde140c8650fae6121d1bb7f4c3fbf4725357b25c8158')
 groups=('wiiu-dev')
 
 package() {
-  install -d "$pkgdir"/opt/devkitpro/portlibs/wiiu/bin
-  cp "$srcdir"/pkg-config.in "$pkgdir"/opt/devkitpro/portlibs/wiiu/bin/powerpc-eabi-pkg-config
+  install -d "$pkgdir$DEVKITPRO"/portlibs/wiiu/bin
+  cp "$srcdir"/pkg-config.in "$pkgdir$DEVKITPRO"/portlibs/wiiu/bin/powerpc-eabi-pkg-config
 }
