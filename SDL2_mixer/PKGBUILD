@@ -8,7 +8,7 @@ arch=('any')
 url="https://libsdl.org/projects/SDL_mixer/"
 license=("zlib")
 options=(!strip libtool staticlibs)
-makedepends=('switch-pkg-config' 'dkp-toolchain-vars')
+makedepends=('wiiu-pkg-config' 'dkp-toolchain-vars')
 groups=('wiiu-portlibs' 'wiiu-sdl-libs')
 depends=(
   'wiiu-sdl2'
